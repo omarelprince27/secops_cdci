@@ -38,4 +38,10 @@ jobs:
           key: v1-dependencies-{{ checksum "webdemo/pom.xml" }}
 
       # run tests!
-      - run: cd webdemo && mvn integration-test
+      - run:
+           command:  
+              - cd webdemo
+              - mvn integration-test
+              - mkdir tmp
+              - cp target/*.jar tmp/
+      
