@@ -41,5 +41,5 @@ jobs:
       - run: cd webdemo && mvn integration-test
       
       - store_artifacts:
-           path: target/*.jar
+           path: webdemo/target/*.jar
               
