@@ -3,3 +3,6 @@ language: java
 script:
    - chmod +x webdemobuild.sh 
    - ./webdemobuild.sh 
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
