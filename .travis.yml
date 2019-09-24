@@ -1,5 +1,5 @@
 language: java
 
 script:
-   - chmod +x /webdemo/build.sh 
+   - chmod +x webdemo/build.sh 
    - webdemo/build.sh 
