@@ -1,5 +1,9 @@
 language: java
 
+env:
+  global:
+     - CODECOV_TOKEN="c84bf04c-3e28-40cd-bff9-cc64cb9ba347"
+
 script:
    - chmod +x webdemobuild.sh 
    - ./webdemobuild.sh 
